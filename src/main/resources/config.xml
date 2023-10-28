@@ -4,7 +4,7 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
-    <context:annotation-config></context:annotation-config>
+    <context:annotation-config/>
 
     <bean id="student" class="org.example.entity.Student">
         <property name="id" value="33"/>
@@ -12,5 +12,10 @@
         <property name="lastName" value="First"/>
     </bean>
 
+    <bean id="testBean" class="org.example.testbean.TestBeanWithRequired"> <!-- определяем уникальный идентификатор нашего бина и класс, из которого его необходимо создать -->
+         <!-- Задаем необходимые параметры -->
+        <property name="age" value="10"/>
+        <property name="name" value="Vasiliy"/>
+    </bean>
 
 </beans>
