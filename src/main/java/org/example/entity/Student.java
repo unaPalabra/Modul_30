@@ -1,5 +1,7 @@
 package org.example.entity;
 
+import org.springframework.beans.factory.annotation.Required;
+
 public class Student {
     private Long id;
     private String firstName;
@@ -9,6 +11,7 @@ public class Student {
         return id;
     }
 
+    @Required
     public void setId(Long id) {
         this.id = id;
     }

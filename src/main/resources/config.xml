@@ -7,9 +7,9 @@
     <context:annotation-config/>
 
     <bean id="student" class="org.example.entity.Student">
-        <property name="id" value="33"/>
+        <property name="id" value="2356"/>
         <property name="firstName" value="Andrew"/>
-        <property name="lastName" value="First"/>
+        <property name="lastName" value="Frozz"/>
     </bean>
 
     <bean id="testBean" class="org.example.testbean.TestBeanWithRequired"> <!-- определяем уникальный идентификатор нашего бина и класс, из которого его необходимо создать -->
@@ -17,5 +17,7 @@
         <property name="age" value="10"/>
         <property name="name" value="Vasiliy"/>
     </bean>
+
+<bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>
 
 </beans>
