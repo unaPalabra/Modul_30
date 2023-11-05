@@ -14,6 +14,7 @@ public class App {
         System.out.println(student.getFirstName());
         System.out.println(student.getLastName());
 
+
         ApplicationContext context1 = new AnnotationConfigApplicationContext("org.example");
         DeveloperInteraction developerInteraction = context1.getBean(DeveloperInteraction.class);
         developerInteraction.run();
